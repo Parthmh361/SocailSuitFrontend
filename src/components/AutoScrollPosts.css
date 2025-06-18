@@ -1,0 +1,25 @@
+.auto-scroll-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.auto-scroll-track {
+  display: flex;
+  gap: 1.5rem;
+  animation: auto-scroll 30s linear infinite;
+  will-change: transform;
+}
+
+.auto-scroll-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes auto-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
