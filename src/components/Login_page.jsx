@@ -42,7 +42,7 @@ export default function Login() {
         setIsLoggedIn(true);
         dispatch(setUser(res.data.user));
         localStorage.setItem("user", JSON.stringify(res.data.user));
-        window.location.href = "https://hbg-vercel-yhjj.vercel.app/Home";
+        window.location.href = "https://socail-suit-frontend-buv2.vercel.app/Home";
       }
     } catch (err) {
       alert("Invalid login");
@@ -95,7 +95,7 @@ export default function Login() {
         youtubeAppSecret,
       });
       localStorage.setItem("appCredsEntered", "true");
-      window.location.href = "https://hbg-vercel-yhjj.vercel.app/Home";
+      window.location.href = "https://socail-suit-frontend-buv2.vercel.app/Home";
     } catch (err) {
       alert("Failed to save credentials");
     }
